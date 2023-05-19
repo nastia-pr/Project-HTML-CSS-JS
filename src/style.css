@@ -1,0 +1,1262 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+/* Variables */
+:root {
+  --clr-naranja: #FF6600;
+  --clr-layer: rgba(99, 108, 232, 0.3);
+  --clr-footer: #3586ff;
+}
+
+/*  Estilos básicos globales*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+
+
+/*Header*/
+
+header {
+  height: 80vh;
+  position: relative;
+  padding: 0 2rem;
+  background-image: url(../img/fondo.webp);
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+
+.header-explora {
+  height: 40vh;
+  position: relative;
+  padding: 0 2rem;
+  background-image: url(../img/header-explora.webp);
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+
+.header-sobre {
+  height: 40vh;
+  position: relative;
+  padding: 0 2rem;
+  background-image: url(../img/header-sobre.webp);
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header-detalle {
+  height: 40vh;
+  position: relative;
+  padding: 0 2rem;
+  background-image: url(../img/header-detalle.webp);
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header-referencias {
+  height: 40vh;
+  position: relative;
+  padding: 0 2rem;
+  background-image: url(../img/header-ref.webp);
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 80px;
+  width: 100px;
+  position: relative;
+  top: 20px;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.info-btn {
+  background-color: var(--clr-naranja);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info-btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.info-btn:active {
+  scale: 0.95;
+}
+
+div#titulo {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#titulo h1 {
+  font-size: 3rem;
+  margin-bottom: 9.5rem;
+}
+
+/* Dropdown menu*/
+
+.dropdown-menu {
+display: none;
+position: absolute;
+right: 2rem;
+top: 60px;
+height: 0;
+width: 300px;
+background: #5ce5f1;
+backdrop-filter: blur(15px);
+border-radius: 10px;
+overflow: hidden;
+transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+  height: 240px;
+}
+
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu a:hover {
+  color: #fff;
+  transition: all ease 0.3s;
+}
+
+.dropdown-menu .info-btn {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Main index*/
+
+main .frase {
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 60px;
+font-size: 2.5rem;
+}
+
+.main {
+width: 80%;
+margin: auto;
+text-align: center;
+padding-top: 30px;
+}
+
+.main h2 {
+  font-size: 2.2rem;
+}
+
+#disfruta {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+#mapa {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+#lugares-interes {
+  margin-bottom: 20px;
+}
+
+.link-index {
+  color: var(--clr-naranja);
+}
+
+.link-index:hover {
+  color: rgb(177, 21, 21);
+  transition: all ease 0.3s;
+}
+
+
+.rutas {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lugares {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lugar-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lugar-col img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: var(--clr-layer);
+}
+
+.layer p {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 2rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover p {
+  bottom: 42%;
+  opacity: 1;
+}
+
+.ruta-col {
+  color: rgb(21, 21, 21);
+  background: rgba(89, 237, 243, 0.1);
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.ruta-col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.ruta-col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#map { 
+  height: 400px; 
+}
+
+.container-img-clip img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-img-clip {
+	width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  clip-path: circle(30% at 0%);
+	animation: look 5s infinite;
+}
+
+@keyframes look {
+	0% {clip-path: circle(30% at 0%)}
+	50% {clip-path: circle(30% at 100%)}
+}
+
+.forma-5 {
+  position: absolute;
+  right: 1000;
+  top: 400;
+  z-index: -1;
+}
+
+.forma-6 {
+  position: absolute;
+  right: 1000;
+  top: 1000;
+  z-index: -1;
+}
+
+.forma-7 {
+  position: absolute;
+  left: 1000;
+  top: 400;
+  z-index: -1;
+}
+
+.forma-8 {
+  position: absolute;
+  left: 1000;
+  top: 1050;
+  z-index: -1;
+}
+
+
+/*página explora*/
+
+.link1 {
+  background: rgba(0,0,0,.4);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.link1:hover {
+  background: var(--clr-naranja);
+}
+
+#explora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.linea {
+  height: 1px;
+  background-color: black;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.explora-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.explora-heading p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.explora-heading h1{
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.explora-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.explora-box {
+  width: 350px;
+  height: 600px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  margin: 20px;
+}
+
+.explora-img {
+  width: 100%;
+  height: auto;
+}
+
+.explora-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.explora-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.explora-text p {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+
+.explora-text h2 {
+font-size: 1rem;
+margin-bottom: 10px;
+}
+
+.explora-text .explora-link {
+font-size: 0.8rem;
+font-weight: 500;
+color: var(--clr-naranja);
+margin-top: 10px;
+}
+
+.explora-text .explora-link:hover {
+color: rgb(177, 21, 21);
+transition: all ease 0.3s;
+}
+
+
+/*página detalle*/
+
+.container-detalle {
+  width: 80%;
+  max-width: 117rem;
+  margin: 0 auto;
+}
+
+.hero-detalle {
+  max-width: 114rem;
+  height: 30rem;
+  background: url(../img/gaviotas.webp) no-repeat center center / cover;
+  margin: 3rem auto;
+  border-radius: 5px;
+}
+
+.detalle-main {
+  width: 90%;
+  max-width: 80rem;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 1.5rem;
+  margin-top: -10rem;
+}
+
+.detalle-main h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.articulo-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 3rem 0;
+}
+
+.articulo-container .articulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  width: 6rem;
+  height: 6rem;
+  background: url(../img/concha.webp) no-repeat center center / cover;
+  border-radius: 0.5rem;
+}
+
+.texto-detalle {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.texto-detalle h2 {
+  text-transform: uppercase;
+}
+
+.contenido-detalle p {
+  color: #5b5963;
+  margin: 1rem 0;
+}
+
+.playas-mar {
+  font-size: 1.7rem;
+  letter-spacing: 0.5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.playas-fl {
+  font-size: 1.7rem;
+  letter-spacing: 0.5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.contenido-detalle h3 {
+font-size: 1.4rem;
+font-weight: 600;
+color: #5b5963;
+margin: 2rem 0;
+}
+.contenido-img-container {
+  width: 100%;
+  height: 35rem;
+  background: url(../img/playaarea.webp)no-repeat center center / cover;
+  border-radius: 5px;
+}
+
+.contenido-img-container2 {
+  width: 100%;
+  height: 35rem;
+  background: url(../img/playafedorento.webp)no-repeat center center / cover;
+  border-radius: 5px;
+}
+.contenido-img-container3 {
+  width: 100%;
+  height: 35rem;
+  background: url(../img/playacarreiro.webp)no-repeat center center / cover;
+  border-radius: 5px;
+}
+
+.contenido-img-container4 {
+  width: 100%;
+  height: 35rem;
+  background: url(../img/playamuino.webp)no-repeat center center / cover;
+  border-radius: 5px;
+}
+.contenido-img-container5 {
+  width: 100%;
+  height: 35rem;
+  background: url(../img/playalamina.webp)no-repeat center center / cover;
+  border-radius: 5px;
+}
+
+.contenido-img-container6 {
+  width: 100%;
+  height: 35rem;
+  background: url(../img/playaarmona.webp)no-repeat center center / cover;
+  border-radius: 5px;
+}
+
+.contenido-img-container7 {
+  width: 100%;
+  height: 35rem;
+  background: url(../img/playacodesal.webp)no-repeat center center / cover;
+  border-radius: 5px;
+}
+
+.destacar {
+  font-size: 1.1rem;
+  padding: 1rem 2.8rem;
+  line-height: 1.6;
+  font-weight: 300;
+  box-shadow: inset 0.3rem 0 0 #2884d5;
+  background-color: #cccccc;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+}
+
+.tags p {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.tags a {
+  display: inline-block;
+  padding: 0.3rem 1.5rem;
+  background-color: rgba(255, 220, 105, 0.703);
+  font-size: .9rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+}
+
+.otros-articulos {
+  width: 100%;
+  background-color: #c8f3f0;
+  margin: 5rem 0;
+  padding: 5rem 0;
+  border-radius: 5px;
+}
+
+.articulos-heading {
+text-transform: uppercase;
+text-align: center;
+width: 100%;
+position: relative;
+}
+
+.articulos-heading h5 {
+  font-size: 2rem;
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #5b5963;
+}
+
+.cartas {
+  display: flex;
+  padding: 2rem 3rem;
+  justify-content: space-between;
+  margin: 4rem auto;
+  gap: 3rem;
+}
+
+.cartas .carta-contenedor {
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.carta-contenedor .img-holder {
+  max-width: 100%;
+  height: 24rem;
+  background: url(../img/puerto.webp) no-repeat center center / cover;
+  position: relative;
+}
+
+.carta-contenedor.dos .img-holder {
+  background: url(../img/casa-indiana.webp) no-repeat center center / cover;
+}
+
+.carta-contenedor.tres .img-holder {
+  background: url(../img/museo.webp) no-repeat center center / cover;
+}
+
+.img-holder a {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.3rem 1.5rem;
+  display: inline-block;
+  font-weight: 400;
+  position: absolute;
+  background-color: white;
+  bottom: 5%;
+  right: 5%;
+  transition: all 0.4s ease;
+}
+
+.cartas .carta-contenedor:hover {
+  transform: translateY(-1rem);
+}
+
+.carta-contenedor a:hover {
+background-color: #ffae00;
+color: white;
+}
+
+.carta-texto {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0 0.3rem grey;
+}
+
+.carta-texto h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: .8rem;
+}
+
+.carta-texto p {
+  font-size: .9rem;
+}
+
+
+
+/*página sobre nosotros*/
+
+.sobre-nosotros {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-section {
+  background: url(../img/mar.webp) no-repeat left;
+  background-size: 55%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  padding: 100px 0;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+
+.sobre-section2 {
+  background: url(../img/team.webp) no-repeat right;
+  background-size: 70%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  padding: 100px 0;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 100px;
+  border-radius: 20px;
+}
+
+.inner-container2 {
+  width: 55%;
+  float: left;
+  background-color: #fdfdfd;
+  padding: 100px;
+  border-radius: 20px;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.inner-container2 h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.texto {
+  font-size: 1.1rem;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.ofrecemos {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #0058dc;
+}
+
+.historia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.historia-texto {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.container-texto-historia {
+  width: 80%;
+  max-width: 117rem;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.color-nombres {
+  color: var(--clr-naranja)
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 922;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+body {
+  overflow-x:hidden;
+} 
+
+
+.forma-1 {
+    position: absolute;
+    left: 700;
+    top: 700;
+    z-index: -1;
+}
+
+.forma-2 {
+  position: absolute;
+  right: 700;
+  top: 650;
+  z-index: -1;
+}
+
+.forma-3 {
+  position: absolute;
+  right: 1000;
+  top: 1200;
+  z-index: -1;
+}
+
+.forma-4 {
+  position: absolute;
+  left: 1000;
+  top: 1250;
+  z-index: -1;
+}
+
+
+.hola-svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+text {
+  font-size: 3em;
+  fill: rgb(54, 104, 255);
+  transform: translateY(3px);
+  animation: wavyText 1.3s alternate steps(2, end) infinite;
+}
+
+.h {
+  animation-delay: 0;
+}
+
+.o {
+  animation-delay: 0.1s;
+}
+
+.l {
+  animation-delay: 0.15s;
+}
+
+.a {
+  animation-delay: 0.2s;
+}
+
+@keyframes wavyText {
+  20%,
+  100% {
+    transform: translate(0, 3px);
+  }
+
+  0% {
+    transform: translate(0, 0px);
+  }
+  10% {
+    transform: translate(0, 3px);
+  }
+}
+
+
+/*página referencias*/
+.container-texto-fuentes {
+  width: 80%;
+  max-width: 117rem;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.fuentes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+dl dt {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+dt {
+  display: block;
+  margin-left: 20px;
+}
+
+dd {
+  display: block;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.link-ref {
+  display: block;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: var(--clr-naranja);
+}
+
+.link-ref:hover {
+  color: rgb(177, 21, 21);
+  transition: all ease 0.3s;
+}
+
+.square_lista {
+  background-color: var(--clr-naranja);
+  position: relative;
+  top: 23px;
+  width: 12px;
+  height: 12px;
+}
+
+/*Footer*/
+
+footer {
+  position: relative;
+  width: 100%;
+  background: var(--clr-footer);
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+
+.logo-footer img {
+  height: 70px;
+  width: 90px;
+}
+
+footer .social-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  flex-wrap: wrap;
+}
+
+footer .menu-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .menu-footer2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social-icons li a {
+  font-size: 1.3rem;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .menu-footer li a {
+  font-size: .9rem;
+  margin: 0 10px;
+  padding-top: 5px;
+  display: inline-block;
+  transition: 0.5s;
+  opacity: 0.75;
+}
+
+footer .menu-footer2 li a {
+  font-size: .7rem;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  opacity: 0.75;
+}
+
+footer .menu-footer li a:hover {
+  opacity: 1;
+}
+
+footer .menu-footer2 li a:hover {
+  opacity: 1;
+}
+
+footer .social-icons li a:hover {
+  transform: translateY(-10px);
+}
+
+footer .info-footer {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.footer-links:hover {
+color: #fff;
+}
+
+footer .ola {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/wave.webp);
+  background-size: 1000px 100px;
+}
+
+footer .ola#ola1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateOla 4s linear infinite;
+}
+
+
+footer .ola#ola2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateOla-02 4s linear infinite;
+}
+
+footer .ola#ola3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateOla 3s linear infinite;
+}
+
+
+footer .ola#ola4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateOla-02 3s linear infinite;
+}
+
+@keyframes animateOla {
+  0% {
+    background-position-x: 1000px ;
+  }
+
+  100% {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateOla-02 {
+  0% {
+    background-position-x: 0px ;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/*Diseño responsive*/
+
+@media(max-width: 1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+
+}
+
+@media(max-width: 992px) {
+  .navbar .links,
+  .navbar .info-btn {
+    display: none;
+  }
+
+  .navbar .toggle-btn {
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
+
+  .lugares {
+    flex-direction: column;
+  }
+
+  .rutas {
+    flex-direction: column;
+  }
+
+  .inner-container {
+    width: 100%;
+  }
+
+  .inner-container2 {
+    width: 100%;
+  }
+
+  .sobre-section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+
+  .sobre-section2 {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+
+  .cartas {
+    flex-direction: column;
+  }
+
+  .tags {
+    display: none;
+  }
+
+}
+
+@media(max-width: 858px) {
+  .explora-box {
+    margin: 20px 10px;
+    width: 70%;
+  }
+}
+
+@media(max-width: 576px) {
+  .dropdown-menu {
+    left: 2rem;
+    width: unset;
+  }
+
+  .rutas {
+    flex-direction: column;
+  }
+
+  .lugares {
+    flex-direction: column;
+  }
+
+  .explora-box {
+    margin: 20px 10px;
+    width: 80%;
+  }
+
+  #explora {
+    padding: 20px;
+  }
+
+  .inner-container {
+    padding: 60px;
+  }
+
+  .sobre-section {
+    padding: 0;
+  }
+
+  .inner-container2 {
+    padding: 60px;
+  }
+
+  .sobre-section2 {
+    padding: 0;
+  }
+
+  .cartas {
+    flex-direction: column;
+  }
+
+  .tags {
+    display: none;
+  }
+
+  .contenido-img-container, .contenido-img-container2, .contenido-img-container3, .contenido-img-container4, .contenido-img-container5, .contenido-img-container6, .contenido-img-container7 {
+    display: none;
+  }
+}
