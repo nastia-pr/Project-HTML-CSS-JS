@@ -35,7 +35,7 @@ header {
   height: 80vh;
   position: relative;
   padding: 0 2rem;
-  background-image: url(../img/fondo.webp);
+  background-image: url("/img/fondo.webp"), url("/img/fondo.jpg");
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 20px;
@@ -47,7 +47,7 @@ header {
   height: 40vh;
   position: relative;
   padding: 0 2rem;
-  background-image: url(../img/header-explora.webp);
+  background-image: url("/img/header-explora.webp"), url("/img/header-explora.jpg");
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 20px;
@@ -59,7 +59,7 @@ header {
   height: 40vh;
   position: relative;
   padding: 0 2rem;
-  background-image: url(../img/header-sobre.webp);
+  background-image: url("/img/header-sobre.webp"), url("/img/header-sobre.jpg");
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 20px;
@@ -70,7 +70,7 @@ header {
   height: 40vh;
   position: relative;
   padding: 0 2rem;
-  background-image: url(../img/header-detalle.webp);
+  background-image: url("/img/header-detalle.webp"), url("/img/header-detalle.jpg");
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 20px;
@@ -81,7 +81,7 @@ header {
   height: 40vh;
   position: relative;
   padding: 0 2rem;
-  background-image: url(../img/header-ref.webp);
+  background-image: url("/img/header-ref.webp"), url("/img/header-ref.jpg");
   background-size: cover;
   background-position: center;
   border-bottom-left-radius: 20px;
@@ -457,7 +457,7 @@ transition: all ease 0.3s;
 .hero-detalle {
   max-width: 114rem;
   height: 30rem;
-  background: url(../img/gaviotas.webp) no-repeat center center / cover;
+  background: url("/img/gaviotas.webp") no-repeat center center / cover, url("/img/gaviotas.jpg") no-repeat center center / cover;
   margin: 3rem auto;
   border-radius: 5px;
 }
@@ -495,7 +495,7 @@ margin: 3rem 0;
 .img-container {
   width: 6rem;
   height: 6rem;
-  background: url(../img/concha.webp) no-repeat center center / cover;
+  background: url("/img/concha.webp") no-repeat center center / cover, url("/img/concha.jpg") no-repeat center center / cover;
   border-radius: 0.5rem;
 }
 
@@ -540,47 +540,47 @@ margin: 2rem 0;
 .contenido-img-container {
   width: 100%;
   height: 35rem;
-  background: url(../img/playaarea.webp)no-repeat center center / cover;
+  background: url("/img/playaarea.webp")no-repeat center center / cover, url("/img/playaarea.jpg")no-repeat center center / cover;
   border-radius: 5px;
 }
 
 .contenido-img-container2 {
   width: 100%;
   height: 35rem;
-  background: url(../img/playafedorento.webp)no-repeat center center / cover;
+  background: url("/img/playafedorento.webp")no-repeat center center / cover, url("/img/playafedorento.jpg")no-repeat center center / cover;
   border-radius: 5px;
 }
 .contenido-img-container3 {
   width: 100%;
   height: 35rem;
-  background: url(../img/playacarreiro.webp)no-repeat center center / cover;
+  background: url("/img/playacarreiro.webp")no-repeat center center / cover, url("/img/playacarreiro.jpg")no-repeat center center / cover;
   border-radius: 5px;
 }
 
 .contenido-img-container4 {
   width: 100%;
   height: 35rem;
-  background: url(../img/playamuino.webp)no-repeat center center / cover;
+  background: url("/img/playamuino.webp")no-repeat center center / cover, url("/img/playamuino.jpg")no-repeat center center / cover;
   border-radius: 5px;
 }
 .contenido-img-container5 {
   width: 100%;
   height: 35rem;
-  background: url(../img/playalamina.webp)no-repeat center center / cover;
+  background: url("/img/playalamina.webp")no-repeat center center / cover, url("/img/playalamina.jpg")no-repeat center center / cover;
   border-radius: 5px;
 }
 
 .contenido-img-container6 {
   width: 100%;
   height: 35rem;
-  background: url(../img/playaarmona.webp)no-repeat center center / cover;
+  background: url("/img/playaarmona.webp")no-repeat center center / cover, url("/img/playaarmona.jpg")no-repeat center center / cover;
   border-radius: 5px;
 }
 
 .contenido-img-container7 {
   width: 100%;
   height: 35rem;
-  background: url(../img/playacodesal.webp)no-repeat center center / cover;
+  background: url("/img/playacodesal.webp")no-repeat center center / cover, url("/img/playacodesal.jpg")no-repeat center center / cover;
   border-radius: 5px;
 }
 
@@ -655,16 +655,16 @@ position: relative;
 .carta-contenedor .img-holder {
   max-width: 100%;
   height: 24rem;
-  background: url(../img/puerto.webp) no-repeat center center / cover;
+  background: url("/img/puerto.webp") no-repeat center center / cover, url("/img/puerto.jpg") no-repeat center center / cover;
   position: relative;
 }
 
 .carta-contenedor.dos .img-holder {
-  background: url(../img/casa-indiana.webp) no-repeat center center / cover;
+  background: url("/img/casa-indiana.webp") no-repeat center center / cover, url("/img/casa-indiana.jpeg") no-repeat center center / cover;
 }
 
 .carta-contenedor.tres .img-holder {
-  background: url(../img/museo.webp) no-repeat center center / cover;
+  background: url("/img/museo.webp") no-repeat center center / cover, url("/img/museo.jpg") no-repeat center center / cover;
 }
 
 .img-holder a {
@@ -717,7 +717,7 @@ color: white;
 }
 
 .sobre-section {
-  background: url(../img/mar.webp) no-repeat left;
+  background: url("/img/mar.webp") no-repeat left, url("/img/mar.jpg") no-repeat left;
   background-size: 55%;
   background-color: #f1f1f1;
   overflow: hidden;
@@ -727,7 +727,7 @@ color: white;
 }
 
 .sobre-section2 {
-  background: url(../img/team.webp) no-repeat right;
+  background: url("/img/team.webp") no-repeat right, url("/img/team.jpg") no-repeat right;
   background-size: 70%;
   background-color: #f1f1f1;
   overflow: hidden;
@@ -987,7 +987,7 @@ footer .ola {
   left: 0;
   width: 100%;
   height: 100px;
-  background: url(../img/wave.webp);
+  background: url("/img/wave.webp"), url("/img/wave.png");
   background-size: 1000px 100px;
 }
 
