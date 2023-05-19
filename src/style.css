@@ -839,6 +839,13 @@ color: white;
   color: var(--clr-naranja)
 }
 
+.centrar-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
