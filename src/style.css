@@ -459,12 +459,13 @@ transition: all ease 0.3s;
   margin: 0 auto;
 }
 
-.hero-detalle {
-  max-width: 114rem;
-  height: 30rem;
-  background: url("/img/gaviotas.webp") no-repeat center center / cover, url("/img/gaviotas.jpg") no-repeat center center / cover;
-  margin: 3rem auto;
-  border-radius: 5px;
+.background-image {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 1;
+  border-radius: 10px;
 }
 
 .detalle-main {
@@ -474,7 +475,9 @@ transition: all ease 0.3s;
   margin: 0 auto;
   padding: 3rem;
   border-radius: 1.5rem;
-  margin-top: -10rem;
+  margin-top: 35rem;
+  position: relative;
+  z-index: 2;
 }
 
 .detalle-main h1 {
@@ -1072,6 +1075,10 @@ footer .ola#ola4 {
     padding: 80px;
   }
 
+  .detalle-main {
+    margin-top: 28rem;
+  }
+
 }
 
 @media(max-width: 992px) {
@@ -1122,12 +1129,20 @@ footer .ola#ola4 {
     display: none;
   }
 
+  .detalle-main {
+    margin-top: 25rem;
+  }
+
 }
 
 @media(max-width: 858px) {
   .explora-box {
     margin: 20px 10px;
     width: 70%;
+  }
+
+  .detalle-main {
+    margin-top: 20rem;
   }
 }
 
@@ -1180,5 +1195,9 @@ footer .ola#ola4 {
 
   .contenido-img-container, .contenido-img-container2, .contenido-img-container3, .contenido-img-container4, .contenido-img-container5, .contenido-img-container6, .contenido-img-container7 {
     display: none;
+  }
+
+  .detalle-main {
+    margin-top: 15rem;
   }
 }
