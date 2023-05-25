@@ -22,6 +22,7 @@
     "sharp": "^0.31.3"
   },
   "dependencies": {
+    "jshint": "^2.13.6",
     "leaflet": "^1.9.3"
   }
 }

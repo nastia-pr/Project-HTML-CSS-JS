@@ -332,6 +332,11 @@ padding-top: 30px;
   margin-right: auto;
   clip-path: circle(30% at 0%);
 	animation: look 5s infinite;
+  cursor: pointer;
+}
+
+.paused {
+  animation-play-state: paused;
 }
 
 @keyframes look {
@@ -709,6 +714,25 @@ color: white;
 
 /*página sobre nosotros*/
 
+@keyframes fade {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(50px); }
+  100% { transform: translateX(0); }
+}
+
+.texto-animado {
+  animation-name: fade, slide;
+  animation-duration: 2s, 4s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 .sobre-nosotros {
   min-height: 100vh;
   display: flex;
@@ -815,7 +839,7 @@ color: white;
   justify-content: center;
   align-items: center;
 }
-.path {
+.animar-path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 5s linear alternate infinite;
