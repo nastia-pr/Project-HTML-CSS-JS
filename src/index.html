@@ -22,13 +22,13 @@
     
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-    crossorigin=""></script>
+    crossorigin="" async></script>
   </head>
   <body>
     <header>
       <nav>
         <div class="navbar">
-          <div class="logo"><a href="index.html"><img src="/img/logo.png" alt="logo"></a></div>
+          <div class="logo"><a href="index.html"><img src="/img/logo.png" alt="logo" loading="lazy"></a></div>
           <ul class="links">
             <li><a class="link1" href="index.html">Inicio</a></li>
             <li><a class="link1" href="explora.html">Explora</a></li>
@@ -66,7 +66,7 @@
         <picture>
           <source srcset="/img/clip-img.webp" type="image/webp">
           <source srcset="/img/clip-img.jpg" type="image/jpeg"> 
-          <img src="/img/clip-img.jpg" alt="gente andando por un campo al atardecer">
+          <img src="/img/clip-img.jpg" alt="gente andando por un campo al atardecer" loading="lazy">
         </picture>
       </div>
 
@@ -82,7 +82,7 @@
             <picture>
               <source srcset="/img/gaviotas.webp" type="image/webp">
               <source srcset="/img/gaviotas.jpg" type="image/jpeg"> 
-              <img src="/img/gaviotas.jpg" alt="Foto de una playa">
+              <img src="/img/gaviotas.jpg" alt="Foto de una playa" loading="lazy">
             </picture>
             <div class="layer">
               <a href="explora.html#playa"><p>PLAYAS</p></a>
@@ -93,7 +93,7 @@
             <picture>
               <source srcset="/img/santa-tecla.webp" type="image/webp">
               <source srcset="/img/santa-tecla.jpg" type="image/jpeg"> 
-              <img src="/img/santa-tecla.jpg" alt="Foto del monte de Santa Tecla">
+              <img src="/img/santa-tecla.jpg" alt="Foto del monte de Santa Tecla" loading="lazy">
             </picture>
             <div class="layer">
               <a href="explora.html#castro"><p>SANTA TECLA</p></a>
@@ -104,7 +104,7 @@
             <picture>
               <source srcset="/img/pueblo.webp" type="image/webp">
               <source srcset="/img/pueblo.jpg" type="image/jpeg"> 
-              <img src="/img/pueblo.jpg" alt="Foto del pueblo de A Guarda">
+              <img src="/img/pueblo.jpg" alt="Foto del pueblo de A Guarda" loading="lazy">
             </picture>
             <div class="layer">
               <a href="explora.html#casco"><p>CASCO HISTÓRICO</p></a>
@@ -168,7 +168,7 @@
         <div class="ola" id="ola4"></div>
       </div>
 
-      <div class="logo-footer"><img src="/img/logo.png" alt="logo"></div>
+      <div class="logo-footer"><img src="/img/logo.png" alt="logo" loading="lazy"></div>
 
       <ul class="menu-footer">
         <li><a class="footer-links" href="index.html">Inicio</a></li>
@@ -206,8 +206,8 @@
       </div>
     </footer>
 
-    <script src="./app.js"></script>
-    <script src="./mapa.js"></script>
-    <script src="./clip.js"></script>
+    <script src="./app.js" async></script>
+    <script src="./mapa.js" async></script>
+    <script src="./clip.js" async></script>
   </body>
 </html>
