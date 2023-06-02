@@ -59,9 +59,6 @@ header {
   height: 40vh;
   position: relative;
   padding: 0 2rem;
-  background-image: url("/img/header-sobre.webp"), url("/img/header-sobre.jpg");
-  background-size: cover;
-  background-position: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -70,9 +67,6 @@ header {
   height: 40vh;
   position: relative;
   padding: 0 2rem;
-  background-image: url("/img/header-ref.webp"), url("/img/header-ref.jpg");
-  background-size: cover;
-  background-position: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -859,6 +853,8 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .sobre-section {
@@ -873,7 +869,7 @@ color: white;
 
 .sobre-section2 {
   background: url("/img/team.webp") no-repeat right, url("/img/team.jpg") no-repeat right;
-  background-size: 70%;
+  background-size: 55%;
   background-color: #f1f1f1;
   overflow: hidden;
   padding: 100px 0;
@@ -887,6 +883,7 @@ color: white;
   background-color: #fdfdfd;
   padding: 100px;
   border-radius: 20px;
+  margin-right: 10px;
 }
 
 .inner-container2 {
@@ -895,6 +892,7 @@ color: white;
   background-color: #fdfdfd;
   padding: 100px;
   border-radius: 20px;
+  margin-left: 10px;
 }
 
 .inner-container h1 {
@@ -1223,10 +1221,12 @@ footer .ola#ola4 {
 
   .inner-container {
     width: 100%;
+    margin-right: 0;
   }
 
   .inner-container2 {
     width: 100%;
+    margin-left: 0;
   }
 
   .sobre-section {
@@ -1289,6 +1289,7 @@ footer .ola#ola4 {
 
   .inner-container {
     padding: 60px;
+    margin-right: 0;
   }
 
   .sobre-section {
@@ -1297,6 +1298,7 @@ footer .ola#ola4 {
 
   .inner-container2 {
     padding: 60px;
+    margin-left: 0;
   }
 
   .sobre-section2 {
