@@ -332,6 +332,7 @@ padding-top: 30px;
 
 .container-img-clip img {
   width: 60%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -339,6 +340,7 @@ padding-top: 30px;
 
 .container-img-clip {
 	width: 60%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
