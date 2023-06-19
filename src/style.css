@@ -123,7 +123,7 @@ header {
 
 .info-btn {
   background-color: var(--clr-naranja);
-  color: #fff;
+  color: #000000;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
@@ -135,7 +135,7 @@ header {
 
 .info-btn:hover {
   scale: 1.05;
-  color: #000000;
+  background-color: rgb(255, 255, 141);
 }
 
 .info-btn:active {
@@ -238,11 +238,11 @@ padding-top: 30px;
 }
 
 .link-index {
-  color: var(--clr-naranja);
+  color: rgb(0, 0, 0);
 }
 
 .link-index:hover {
-  color: rgb(177, 21, 21);
+  color: rgb(0, 82, 133);
   transition: all ease 0.3s;
 }
 
