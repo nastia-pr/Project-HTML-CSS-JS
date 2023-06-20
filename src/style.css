@@ -817,10 +817,11 @@ color: white;
   box-shadow: 0 0 0.3rem grey;
 }
 
-.carta-texto h6 {
+.carta-texto .carta {
   font-size: 1rem;
   text-transform: uppercase;
   margin-bottom: .8rem;
+  font-weight: bold;
 }
 
 .carta-texto p {
