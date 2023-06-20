@@ -456,7 +456,7 @@ margin-bottom: 10px;
 .explora-text .explora-link {
 font-size: 0.8rem;
 font-weight: 500;
-color: var(--clr-naranja);
+color: black;
 margin-top: 10px;
 }
 
@@ -727,7 +727,7 @@ width: 100%;
 position: relative;
 }
 
-.articulos-heading h5 {
+.articulos-heading p {
   font-size: 2rem;
   font-weight: 200;
   position: absolute;
@@ -952,7 +952,8 @@ color: white;
 }
 
 .color-nombres {
-  color: var(--clr-naranja)
+  color:#0058dc;
+  font-weight: bold;
 }
 
 .centrar-svg {
