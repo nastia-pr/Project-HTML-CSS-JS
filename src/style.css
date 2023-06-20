@@ -1015,7 +1015,7 @@ dd {
   display: block;
   margin-left: 40px;
   margin-top: 10px;
-  color: var(--clr-naranja);
+  color: rgb(0, 0, 0);
 }
 
 .link-ref:hover {
@@ -1087,7 +1087,7 @@ footer .social-icons li a {
 }
 
 footer .menu-footer li a {
-  font-size: .9rem;
+  font-size: 1rem;
   margin: 0 10px;
   padding-top: 5px;
   display: inline-block;

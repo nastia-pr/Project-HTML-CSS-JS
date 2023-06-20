@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visita Galicia</title>
+    <meta name="description" content="Portal web sobre sitios de intrés de un pueblo gallego llamado A Guarda.">
     <link rel="icon" href="/img/favicon/favicon.ico" sizes="any">
     <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg"/>
     <link rel="manifest" href="/manifest.webmanifest">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <script>
+      function loadCSS(href) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        link.setAttribute('integrity', 'sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==');
+        link.setAttribute('crossorigin', 'anonymous');
+        link.setAttribute('referrerpolicy', 'no-referrer');
+        document.head.appendChild(link);
+      }
+  
+      loadCSS('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+    </script>
 </head>
 <body>
 
@@ -180,8 +193,8 @@
                     <div class="explora-img">
                         <picture>
                             <source srcset="/img/casa-indiana.webp" type="image/webp">
-                            <source srcset="/img/casa-indiana.jpeg" type="image/jpeg"> 
-                            <img src="/img/casa-indiana.jpeg" alt="Imagen de una casa indiana de A Guarda" loading="lazy">
+                            <source srcset="/img/casa-indiana.jpg" type="image/jpeg"> 
+                            <img src="/img/casa-indiana.jpg" alt="Imagen de una casa indiana de A Guarda" loading="lazy">
                           </picture>
                     </div>
 
