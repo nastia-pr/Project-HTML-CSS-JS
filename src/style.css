@@ -861,7 +861,7 @@ color: white;
 }
 
 .sobre-section {
-  background: url("/img/mar.webp") no-repeat left, url("/img/mar.jpg") no-repeat left;
+  background: url("/img/mar.webp") no-repeat left;
   background-size: 55%;
   background-color: #f1f1f1;
   overflow: hidden;
@@ -871,7 +871,7 @@ color: white;
 }
 
 .sobre-section2 {
-  background: url("/img/team.webp") no-repeat right, url("/img/team.jpg") no-repeat right;
+  background: url("/img/team.webp") no-repeat right;
   background-size: 55%;
   background-color: #f1f1f1;
   overflow: hidden;
